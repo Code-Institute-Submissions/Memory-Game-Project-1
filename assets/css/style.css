@@ -23,8 +23,8 @@
 }
 
 .gamecard:hover {
-    border: 1px solid black;
-    box-shadow: inset 0px 0px 0px 1px red;
+    border: 1px solid #a9a9a9;
+    box-shadow: inset 0px 0px 0px 2px white;
     box-sizing: border-box;
 }
 
