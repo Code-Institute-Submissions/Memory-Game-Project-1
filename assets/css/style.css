@@ -1,7 +1,7 @@
 
 
 .row {
-    text-align: center;
+    justify-content: center;
 }
 
 .gamecard {
@@ -76,5 +76,4 @@
 
 .game {
     padding: 40px 40px 40px 40px;
-    justify: center;
 }
