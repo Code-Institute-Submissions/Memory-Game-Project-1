@@ -35,7 +35,8 @@ $(document).ready(function() {
 
         $(".gamecard").click(function onCardClicked(e) {
             const target = e.currentTarget
-
+            $(".score-title").html("<h2>Combos</h2>")
+            $(".score").html(combosFound)
             if (preventClick || target === clickedCard || $(target).hasClass("done")) {
                 return;
             }
@@ -57,9 +58,11 @@ $(document).ready(function() {
                     }, 500);
                 } else {
                     combosFound++;
+                    $(".score").html(combosFound)
                     clickedCard = null;
                     if (combosFound == 8) {
-                        alert("YOU WIN!!")
+                        $(".score").html("")
+                        $(".score-title").html("<h2>YOU WON!!</h2>")
                     }
                 }
             }
