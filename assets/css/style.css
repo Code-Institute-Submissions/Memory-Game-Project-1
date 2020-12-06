@@ -1,0 +1,77 @@
+.row {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #a9a9a9;
+    cursor: pointer;
+}
+
+.card.done {
+    cursor: default;
+}
+
+.card.done:hover {
+    cursor: default;
+    box-shadow: none;
+    border: none;
+}
+
+.card:hover {
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 0px 1px red;
+    box-sizing: border-box;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.color-hidden {
+    background-color: #a9a9a9;
+}
+
+.header {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.game {
+    padding: 40px 40px 40px 40px;
+}
