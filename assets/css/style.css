@@ -79,3 +79,11 @@
 .game {
     padding: 40px 40px 40px 40px;
 }
+
+.score-title {
+    text-align: center;
+}
+
+.score {
+    text-align: center;
+}
