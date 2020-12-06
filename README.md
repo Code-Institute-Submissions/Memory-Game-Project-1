@@ -22,7 +22,11 @@
 
 ## Testing
 
-### Website Testing
+### Core Website Testing
+
+- Issues Documented
+    - Squares would stack very strangely on smaller screens, especially phone screens.
+        - FIX: Added a media query to reduce the size of the squares when viewed on a smaller screen.
 
 ### Code Testing and Bugfixing
 
