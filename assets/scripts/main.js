@@ -2,6 +2,7 @@ let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
 let numberOfTries = 0;
+let secondSquare = false;
 
 const colors = [
     'pink',
@@ -39,9 +40,14 @@ $(document).ready(function() {
             if (preventClick || target === clickedCard || $(target).hasClass("done")) {
                 return;
             }
-            if ($(".score-title").html() !== "<h2>Combos</h2>") {
-                $(".score-title").html("<h2>Now choose another box!</h2>")
+            if (secondSquare === false) {
+                $(".tutorial").html("<h4>Now press a second square!</h4>")
+                secondSquare = true;
+            } else {
+                $(".tutorial").addClass("hidden")
+                $(".restartbtn").removeClass("hidden")
             }
+            
 
             $(target).removeClass("color-hidden")
             $(target).addClass("done");
