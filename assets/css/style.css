@@ -101,10 +101,23 @@
     font-size: x-large;
 }
 
+.tries {
+    font-size: x-large;
+}
+
+.triessection {
+    padding: 40px 40px 40px 40px
+}
+
+.scoresection {
+    padding: 40px 40px 40px 40px
+}
+
 .scorefooter {
     text-align: center;
     justify-content: center;
     color: #2a2a35;
+    display: flex;
 }
 
 @media(max-width: 600px) {

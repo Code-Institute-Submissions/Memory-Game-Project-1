@@ -1,6 +1,7 @@
 let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
+let numberOfTries = 0;
 
 const colors = [
     'pink',
@@ -38,21 +39,24 @@ $(document).ready(function() {
             if (preventClick || target === clickedCard || $(target).hasClass("done")) {
                 return;
             }
+            if ($(".score-title").html() !== "<h2>Combos</h2>") {
+                $(".score-title").html("<h2>Now choose another box!</h2>")
+            }
 
             $(target).removeClass("color-hidden")
             $(target).addClass("done");
 
             if (!clickedCard) {
                 clickedCard = target;
-                if ($(".score-title").html() !== "<h2>Combos</h2>") {
-                    $(".score-title").html("<h2>Now choose another box!</h2>")
-                }
+                numberOfTries++;
             } else if (clickedCard) {
                 if (clickedCard.getAttribute('data-color') !== target.getAttribute('data-color')) {
                     console.log('cards not equal')
                     preventClick = true;
                     $(".score-title").html("<h2>Combos</h2>")
+                    $(".tries-title").html("<h2>Number of Tries</h2>")
                     $(".score").html(combosFound)
+                    $(".tries").html(`<p> ${numberOfTries} </p>`)
                     setTimeout(() => {
                         $(clickedCard).removeClass("done").addClass("color-hidden");
                         $(target).removeClass("done").addClass("color-hidden");
@@ -60,6 +64,9 @@ $(document).ready(function() {
                         preventClick = false;
                     }, 500);
                 } else {
+                    $(".tries").html(`<p> ${numberOfTries} </p>`)
+                    $(".score-title").html("<h2>Combos</h2>")
+                    $(".tries-title").html("<h2>Number of Tries</h2>")
                     combosFound++;
                     $(".score").html(combosFound)
                     clickedCard = null;
