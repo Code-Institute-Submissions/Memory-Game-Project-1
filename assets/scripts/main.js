@@ -35,8 +35,6 @@ $(document).ready(function() {
 
         $(".gamecard").click(function onCardClicked(e) {
             const target = e.currentTarget
-            $(".score-title").html("<h2>Combos</h2>")
-            $(".score").html(combosFound)
             if (preventClick || target === clickedCard || $(target).hasClass("done")) {
                 return;
             }
@@ -46,10 +44,15 @@ $(document).ready(function() {
 
             if (!clickedCard) {
                 clickedCard = target;
+                if ($(".score-title").html() !== "<h2>Combos</h2>") {
+                    $(".score-title").html("<h2>Now choose another box!</h2>")
+                }
             } else if (clickedCard) {
                 if (clickedCard.getAttribute('data-color') !== target.getAttribute('data-color')) {
                     console.log('cards not equal')
                     preventClick = true;
+                    $(".score-title").html("<h2>Combos</h2>")
+                    $(".score").html(combosFound)
                     setTimeout(() => {
                         $(clickedCard).removeClass("done").addClass("color-hidden");
                         $(target).removeClass("done").addClass("color-hidden");
@@ -63,6 +66,7 @@ $(document).ready(function() {
                     if (combosFound == 8) {
                         $(".score").html("")
                         $(".score-title").html("<h2>YOU WON!!</h2>")
+                        preventClick = true;
                     }
                 }
             }

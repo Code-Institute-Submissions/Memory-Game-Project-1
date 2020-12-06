@@ -87,14 +87,13 @@
     font-size: x-large;
 }
 
-.navbar-expand {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: center;
-}
+@media(max-width: 600px) {
+    .gamecard {
+        height: 80px;
+        width: 80px;
+    }
 
-@media(max-width: 448px) {
+@media(max-width: 342px) {
     .gamecard {
         height: 60px;
         width: 60px;
