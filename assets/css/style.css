@@ -1,26 +1,28 @@
+
+
 .row {
     text-align: center;
 }
 
-.card {
+.gamecard {
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: #a9a9a9;
     cursor: pointer;
+    background-color: transparent;
 }
 
-.card.done {
+.gamecard.done {
     cursor: default;
 }
 
-.card.done:hover {
+.gamecard.done:hover {
     cursor: default;
     box-shadow: none;
     border: none;
 }
 
-.card:hover {
+.gamecard:hover {
     border: 1px solid black;
     box-shadow: inset 0px 0px 0px 1px red;
     box-sizing: border-box;

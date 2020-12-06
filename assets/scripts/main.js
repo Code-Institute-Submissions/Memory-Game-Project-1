@@ -13,7 +13,7 @@ const colors = [
     'green',
 ]
 
-const cards = [...document.querySelectorAll('.card')];
+const cards = [...document.querySelectorAll('.gamecard')];
 for (let color of colors) {
 
     const cardAIndex = parseInt(Math.random() * cards.length)
@@ -33,7 +33,7 @@ for (let color of colors) {
 
 $(document).ready(function() {
 
-        $(".card").click(function onCardClicked(e) {
+        $(".gamecard").click(function onCardClicked(e) {
             const target = e.currentTarget
 
             if (preventClick || target === clickedCard || $(target).hasClass("done")) {
