@@ -91,7 +91,6 @@
 }
 
 .header {
-    text-transform: uppercase;
     text-align: center;
     padding-top: 20px;
     color: #2a2a35;
@@ -144,6 +143,10 @@
     justify-content: center;
     color: #2a2a35;
     display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 @media(max-width: 600px) {
