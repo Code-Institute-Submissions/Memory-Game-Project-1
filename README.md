@@ -2,6 +2,10 @@
  
 ## UX
 
+### Wireframes
+
+The wireframe can be viewed in the "wireframes" directory.
+
 ## Features
  
 ### Existing Features
