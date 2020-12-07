@@ -44,8 +44,8 @@ function tutorialFunction() {
 };
 
 function scoreFunction () {
-    $(".score-title").html("<h2>Combos</h2>")
-    $(".tries-title").html("<h2>Number of Tries</h2>")
+    $(".score-title").html(`<h2 class="score-title">Combos</h2>`)
+    $(".tries-title").html(`<h2 class="tries-title">Number of Tries</h2>`)
     $(".score").html(combosFound)
     $(".tries").html(`<p> ${numberOfTries} </p>`)
 }

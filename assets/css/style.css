@@ -149,10 +149,27 @@
     text-transform: uppercase;
 }
 
+
 @media(max-width: 600px) {
     .gamecard {
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
+    }
+    .tries-title {
+        font-size: 1rem;
+    }
+    .score-title {
+        font-size: 1rem;
+    }
+    .mainheader {
+        font-size: 1.5rem;
+        padding: 0px 0px 10px 0px;
+    }
+    .scoresection, .triessection {
+        padding: 10px 20px 10px 20px;
+    }
+    .game {
+    padding: 20px 20px 20px 20px;
     }
 }
 
@@ -160,8 +177,5 @@
     .gamecard {
         height: 60px;
         width: 60px;
-    }
-    .scoresection, .triessection {
-        padding: 20px 20px 20px 20px;
     }
 }
