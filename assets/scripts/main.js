@@ -33,6 +33,23 @@ for (let color of colors) {
 
 }
 
+function tutorialFunction() {
+    if (secondSquare === false) {
+        $(".tutorial").html("<h4>Now press a second square!</h4>")
+        secondSquare = true;
+    } else {
+        $(".tutorial").addClass("hidden")
+        $(".restartbtn").removeClass("hidden")
+    };
+};
+
+function scoreFunction () {
+    $(".score-title").html("<h2>Combos</h2>")
+    $(".tries-title").html("<h2>Number of Tries</h2>")
+    $(".score").html(combosFound)
+    $(".tries").html(`<p> ${numberOfTries} </p>`)
+}
+
 $(document).ready(function() {
 
         $(".gamecard").click(function onCardClicked(e) {
@@ -40,14 +57,7 @@ $(document).ready(function() {
             if (preventClick || target === clickedCard || $(target).hasClass("done")) {
                 return;
             }
-            if (secondSquare === false) {
-                $(".tutorial").html("<h4>Now press a second square!</h4>")
-                secondSquare = true;
-            } else {
-                $(".tutorial").addClass("hidden")
-                $(".restartbtn").removeClass("hidden")
-            }
-            
+            tutorialFunction()
 
             $(target).removeClass("color-hidden")
             $(target).addClass("done");
@@ -59,10 +69,7 @@ $(document).ready(function() {
                 if (clickedCard.getAttribute('data-color') !== target.getAttribute('data-color')) {
                     console.log('cards not equal')
                     preventClick = true;
-                    $(".score-title").html("<h2>Combos</h2>")
-                    $(".tries-title").html("<h2>Number of Tries</h2>")
-                    $(".score").html(combosFound)
-                    $(".tries").html(`<p> ${numberOfTries} </p>`)
+                    scoreFunction()
                     setTimeout(() => {
                         $(clickedCard).removeClass("done").addClass("color-hidden");
                         $(target).removeClass("done").addClass("color-hidden");
@@ -70,9 +77,7 @@ $(document).ready(function() {
                         preventClick = false;
                     }, 500);
                 } else {
-                    $(".tries").html(`<p> ${numberOfTries} </p>`)
-                    $(".score-title").html("<h2>Combos</h2>")
-                    $(".tries-title").html("<h2>Number of Tries</h2>")
+                    scoreFunction()
                     combosFound++;
                     $(".score").html(combosFound)
                     clickedCard = null;
