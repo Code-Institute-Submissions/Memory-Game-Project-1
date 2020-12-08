@@ -139,9 +139,9 @@ Code was ran through JSHint with no major errors.
 
 - Bugs Documented
     - The game would think that matching colours are not matching and vice versa. 
-        - FIX: Line 69 in main.js operator was set to === instead of !==. This simple change fixed the bug.
+        - FIX: Line 77 in main.js operator was set to === instead of !==. This simple change fixed the bug.
     - Game completely stopped responding
-        - FIX: Forgot to update variable "secondSquare" to "hasSquareBeenClicked" on Line 37
+        - FIX: Forgot to update variable "secondSquare" to "hasSquareBeenClicked" on Line 41
 
 ## Deployment
 
