@@ -98,6 +98,8 @@ as the website was being built.
 
 The website was tested using Chrome Developer Tools on several mobile platforms, as well as on Mozilla Firefox and a 15.6 inch laptop using Google Chrome.
 
+HTML and CSS was ran through validator and had no major issues.
+
 #### Testing
 
 Device | Browser | Resolution | Intended Result | Result |
@@ -116,6 +118,7 @@ My Computer | Google Chrome | Surface Duo, 540 x 720 | Game should be clearly vi
 My Computer | Google Chrome | Galaxy Fold, 280 x 653 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
 Laptop | Google Chrome | 15.6 inch screen, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
 My Computer | Mozilla Firefox | 27 inch monitor, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
+
 #### Issues
 
 - Phones would require you to scroll down to view the scores
@@ -131,6 +134,8 @@ My Computer | Mozilla Firefox | 27 inch monitor, 1920 x 1080 | Game should be cl
 
 Other than manual testing, the code was mainly tested during development by using console.log() to log whether or not the two squares that were clicked were matching.
 Most of the code testing afterwards was done by going to website and playing the game. I ran into a few bugs during the coding process that I have documented below
+
+Code was ran through JSHint with no major errors.
 
 - Bugs Documented
     - The game would think that matching colours are not matching and vice versa. 
@@ -153,6 +158,15 @@ I deployed this website by taking the following steps:
 
 ### Content
 
+All written content interacting with the user was created by me. The JavaScript code was inspired and modified from
+Web Dev Junkie's [youtube video](https://www.youtube.com/watch?v=bbb9dZotsOc).
+
 ### Media
 
+No external images or icons were used, everything was done through styling.
+
+
 ### Acknowledgements
+
+Many thanks to Web Dev Junkie for his [youtube video](https://www.youtube.com/watch?v=bbb9dZotsOc) which helped with the base
+of the project.
