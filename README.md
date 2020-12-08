@@ -102,21 +102,20 @@ The website was tested using Chrome Developer Tools on several mobile platforms,
 
 Device | Browser | Resolution | Intended Result | Result |
 ------------ | ------------ | ------------- | ------------ | ------------- |
-My Computer | Google Chrome | 27 inch Monitor, 1920 x 1080 | Game should be clearly visible on a single page | Result as intended
-My Computer | Google Chrome | Moto G4/Galaxy S5, 360 x 640 | Game should be clearly visible on a single portrait page | Game required you to scroll down to view scores. Fix documented below.
-My Computer | Google Chrome | Pixel 2, 411 x 731 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | Pixel 2 XL, 411 x 823 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | iPhone 5 SE, 320 x 568 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | iPhone 6/7/8, 375 x 667  | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | iPhone 6/7/8 Plus, 414 x 736 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | iPhone X, 375 x 812 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | iPad, 768 x 1024 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | iPad Pro, 1024 x 1366 | Game should be clearly visible on a single portrait page | Game size is too small. Fix documented below.
-My Computer | Google Chrome | Surface Duo, 540 x 720 | Game should be clearly visible on a single portrait page | Result as intended
-My Computer | Google Chrome | Galaxy Fold, 280 x 653 | Game should be clearly visible on a single portrait page | Result as intended
-
-
-
+My Computer | Google Chrome | 27 inch Monitor, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
+My Computer | Google Chrome | Moto G4/Galaxy S5, 360 x 640 | Game should be clearly visible on a single portrait page with Modals easily readable | Game required you to scroll down to view scores. Fix documented below.
+My Computer | Google Chrome | Pixel 2, 411 x 731 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | Pixel 2 XL, 411 x 823 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | iPhone 5 SE, 320 x 568 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | iPhone 6/7/8, 375 x 667  | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | iPhone 6/7/8 Plus, 414 x 736 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | iPhone X, 375 x 812 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | iPad, 768 x 1024 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | iPad Pro, 1024 x 1366 | Game should be clearly visible on a single portrait page with Modals easily readable | Game size is too small. Fix documented below.
+My Computer | Google Chrome | Surface Duo, 540 x 720 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+My Computer | Google Chrome | Galaxy Fold, 280 x 653 | Game should be clearly visible on a single portrait page with Modals easily readable | Result as intended
+Laptop | Google Chrome | 15.6 inch screen, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
+My Computer | Mozilla Firefox | 27 inch monitor, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
 #### Issues
 
 - Phones would require you to scroll down to view the scores
@@ -129,6 +128,9 @@ My Computer | Google Chrome | Galaxy Fold, 280 x 653 | Game should be clearly vi
     - FIX: Added a media query to increase the size of the square when viewed on an iPad Pro
 
 ### Code Testing and Bugfixing
+
+Other than manual testing, the code was mainly tested during development by using console.log() to log whether or not the two squares that were clicked were matching.
+Most of the code testing afterwards was done by going to website and playing the game. I ran into a few bugs during the coding process that I have documented below
 
 - Bugs Documented
     - The game would think that matching colours are not matching and vice versa. 
