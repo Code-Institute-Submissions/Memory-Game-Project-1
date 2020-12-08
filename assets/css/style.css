@@ -1,4 +1,4 @@
-/*-------------------------GAME*/
+/*------------GAME-------------*/
 
 .row {
     justify-content: center;
@@ -38,7 +38,7 @@
     padding: 40px 40px 40px 40px;
 }
 
-/*-------------------------BUTTON*/
+/*------------BUTTON------------*/
 
 .restart-btn {
     font-weight: 400;
@@ -50,11 +50,11 @@
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     /* display: none; */
 }
 
@@ -77,7 +77,7 @@
     text-align: center;
 }
 
-/*-------------------------COLOURS*/
+/*------------COLOURS------------*/
 
 .red {
     background-color: red;
@@ -115,7 +115,7 @@
     background-color: #a9a9a9;
 }
 
-/*-------------------------TEXT*/
+/*------------TEXT------------*/
 
 .header {
     text-align: center;
@@ -139,11 +139,11 @@
 }
 
 .tries-section {
-    padding: 40px 40px 40px 40px
+    padding: 40px 40px 40px 40px;
 }
 
 .score-section {
-    padding: 40px 40px 40px 40px
+    padding: 40px 40px 40px 40px;
 }
 
 .score-footer {
@@ -157,9 +157,9 @@
     text-transform: uppercase;
 }
 
-/*-------------------------MEDIA QUERIES*/
+/*------------MEDIA QUERIES------------*/
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .game-card {
         height: 70px;
         width: 70px;
@@ -174,44 +174,42 @@
         font-size: 1.5rem;
         padding: 0px 0px 10px 0px;
     }
-    .score-section, .tries-section {
+    .score-section,
+    .tries-section {
         padding: 10px 20px 10px 20px;
     }
     .game {
-    padding: 20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
     }
 }
 
-@media(max-width: 342px) {
+@media (max-width: 342px) {
     .game-card {
         height: 60px;
         width: 60px;
     }
 }
 
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-      .game-card {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .game-card {
         height: 150px;
         width: 150px;
-        }
-        .tries-title {
+    }
+    .tries-title {
         font-size: 2rem;
-        }
-        .score-title {
+    }
+    .score-title {
         font-size: 2rem;
-        }
-        .main-header {
+    }
+    .main-header {
         font-size: 3rem;
         padding: 30px 30px 30px 30px;
-        }
-        .score-section, .tries-section {
+    }
+    .score-section,
+    .tries-section {
         padding: 20px 20px 20px 20px;
-        }
-        .game {
+    }
+    .game {
         padding: 20px 20px 20px 20px;
     }
 }

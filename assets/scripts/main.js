@@ -7,7 +7,7 @@ let combosFound = 0;
 let numberOfTries = 0;
 let hasSecondSquareBeenClicked = false;
 
-// List all colours used in the grid
+// List all colours used in the grid (Credits: Web Dev Junkie youtube tutorial)
 const colors = [
     'pink',
     'yellow',
