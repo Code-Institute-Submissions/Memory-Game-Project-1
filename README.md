@@ -125,6 +125,8 @@ My Computer | Google Chrome | Galaxy Fold, 280 x 653 | Game should be clearly vi
     - FIX: Added a media query to reduce the size of the squares when viewed on a smaller screen.
 - Bootstrap overwriting the color of the game cards 
     - FIX: To fix this I had to change the class name of all game cards from .card to .gamecard. This fixed the issue.
+- Game too small on iPad pro screen
+    - FIX: Added a media query to increase the size of the square when viewed on an iPad Pro
 
 ### Code Testing and Bugfixing
 
