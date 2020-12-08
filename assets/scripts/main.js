@@ -1,14 +1,13 @@
 // Memory Game by Cameron Malkani
 // Code inspired and modified to used JQuery from Web Dev Junkies youtube tutorial (credits in the ReadMe)
 
-// Defining all the variables used in the code
 let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
 let numberOfTries = 0;
 let hasSecondSquareBeenClicked = false;
 
-// Defining an array for all the colours used in the colour grid.
+// List all colours used in the grid
 const colors = [
     'pink',
     'yellow',
