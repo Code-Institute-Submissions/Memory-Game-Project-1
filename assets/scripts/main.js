@@ -2,7 +2,7 @@ let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
 let numberOfTries = 0;
-let secondSquare = false;
+let hasSecondSquareBeenClicked = false;
 
 const colors = [
     'pink',
@@ -34,9 +34,9 @@ for (let color of colors) {
 }
 
 function tutorialFunction() {
-    if (secondSquare === false) {
+    if (hasSecondSquareBeenClicked === false) {
         $(".tutorial").html("<h4>Now press a second square!</h4>")
-        secondSquare = true;
+        hasSecondSquareBeenClicked = true;
     } else {
         $(".tutorial").addClass("hidden")
         $(".restartbtn").removeClass("hidden")
