@@ -37,7 +37,7 @@ for (let color of colors) {                                                     
 }
 
 // This function updates the tutorial at the top of the page
-function tutorialFunction() { 
+function showTutorial() { 
     if (hasSecondSquareBeenClicked === false) {                                                     // Detects whether or not the user has selected a second square
         $(".tutorial").html("<h4>Now press a second square!</h4>");                                 // If they haven't then update the tutorial to guide them
         hasSecondSquareBeenClicked = true;                                                          // Set the the variable to true
@@ -48,7 +48,7 @@ function tutorialFunction() {
 };
 
 // This function updates the scores
-function scoreFunction () {
+function updateScore () {
     $(".score-title").html(`<h2 class="score-title">Combos</h2>`);                                  // Changes the score title
     $(".tries-title").html(`<h2 class="tries-title">Number of Tries</h2>`);                         // Changes the tries title
     $(".score").html(combosFound);                                                                  // Updates the text under the title with the number of combos found
@@ -65,7 +65,7 @@ $(document).ready(function() {
                 return;                                                                             // before or the target has the css class "done" then 
             };                                                                                      // return and don't allow the user to click.
 
-            tutorialFunction();                                                                     // Once a card has been clicked, run the tutorial function above.
+            showTutorial();                                                                     // Once a card has been clicked, run the tutorial function above.
 
             $(target).removeClass("color-hidden");                                                  // Once a card has been clicked, reveal its colour
             $(target).addClass("done");                                                             // Once a card has been clicked, remove the highlight and disallow further clicking
@@ -77,7 +77,7 @@ $(document).ready(function() {
                 if (clickedCard.getAttribute('data-color') !== target.getAttribute('data-color')) { // check to see if the two cards selected are equal
                     console.log('cards not equal');                                                 // log to the console that the cards are not equal
                     preventClick = true;                                                            // prevent clicking while the program shows the colours and hides them again
-                    scoreFunction();                                                                // update the score
+                    updateScore();                                                                // update the score
                     clickTimeout = setTimeout(() => {                                               // set a timeout before the colours are hidden again
                         $(clickedCard).removeClass("done").addClass("color-hidden");                // removes the class done and adds the class color-hidden back to the clicked card
                         $(target).removeClass("done").addClass("color-hidden");                     // removes the class done and adds the class color-hidden back to the clicked card
@@ -86,7 +86,7 @@ $(document).ready(function() {
                         clearTimeout(clickTimeout);                                                 // clears the timeout
                     }, 500);                                                                        // the length of the timeout
                 } else {                                                                            // if the two cards match
-                    scoreFunction();                                                                // run score function
+                    updateScore();                                                                // run score function
                     combosFound++;                                                                  // increase the number of combos found
                     clickedCard = null;                                                             // resets the clickedCard variable
                     if (combosFound == 8) {                                                         // if the combosfound = 8
