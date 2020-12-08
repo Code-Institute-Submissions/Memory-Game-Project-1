@@ -1,5 +1,7 @@
 # Memory Game Project
 
+![image](assets/images/websitepreview.jpg)
+
 For my Interactive Frontend Development I have decided to remake an old classic memory game using HTML, CSS, JavaScript, JQuery and Bootstrap.
 This game is built to test the memory of the user by having them reveal colours two at a time and trying to match the colours by remembering
 where they were on the board.
@@ -174,7 +176,10 @@ Web Dev Junkie's [youtube video](https://www.youtube.com/watch?v=bbb9dZotsOc).
 
 ### Media
 
-No external images or icons were used, everything was done through styling.
+http://ami.responsivedesign.is/ - For the readme header.
+
+
+No other external images or icons were used, everything was done through styling.
 
 
 ### Acknowledgements
