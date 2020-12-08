@@ -119,6 +119,17 @@ My Computer | Google Chrome | Galaxy Fold, 280 x 653 | Game should be clearly vi
 Laptop | Google Chrome | 15.6 inch screen, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
 My Computer | Mozilla Firefox | 27 inch monitor, 1920 x 1080 | Game should be clearly visible on a single page with Modals easily readable | Result as intended
 
+#### User Story Testing
+
+* Someone that wants a simple game that they can pick up and play with very little trouble
+    * The game is very simple and intuitive and allows for very easy pick up and play on any device.
+* Someone that wants to be able to "win" the game
+    * The added Combo feature allows the user to find all colour combinations and "win" the game.
+* Someone that wants to restart their game should they want to try again
+    * The restart button feature allows the user to restart the game at any point past the tutorial, which randomises the colours and lets them start again.
+* Someone that wants to challenge their friends and family
+    * The added Number of Tries features allows the user to challenge their friends and family to see who can complete the game in the lowest number of tries.
+
 #### Issues
 
 - Phones would require you to scroll down to view the scores
